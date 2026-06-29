@@ -1,0 +1,17 @@
+match,predicted_score,favourite,confidence,p_win,p_draw,p_loss
+South Africa vs Canada,1-2,Canada,60%,34%,6%,60%
+Brazil vs Japan,1-1,Brazil,47%,47%,17%,37%
+Germany vs Paraguay,2-1,Germany,61%,61%,5%,34%
+Netherlands vs Morocco,1-1,Morocco,39%,37%,24%,39%
+Ivory Coast vs Norway,1-1,Norway,49%,36%,15%,49%
+France vs Sweden,2-0,France,76%,76%,5%,19%
+Mexico vs Ecuador,1-1,Mexico,47%,47%,17%,37%
+England vs DR Congo,2-1,England,73%,73%,5%,22%
+Belgium vs Senegal,1-1,Belgium,45%,45%,18%,37%
+USA vs Bosnia and Herzegovina,1-2,Bosnia and Herzegovina,65%,30%,5%,65%
+Spain vs Austria,2-1,Spain,72%,72%,5%,23%
+Argentina vs Cape Verde,2-0,Argentina,85%,85%,5%,10%
+Switzerland vs Algeria,1-1,Switzerland,42%,42%,20%,37%
+Portugal vs Croatia,1-1,Portugal,49%,49%,14%,36%
+Australia vs Egypt,1-1,Australia,43%,43%,20%,37%
+Colombia vs Scotland,2-1,Colombia,71%,71%,5%,24%
