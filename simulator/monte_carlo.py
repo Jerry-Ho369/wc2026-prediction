@@ -349,5 +349,5 @@ CONFIRMED_R32_2026 = [
     ("Switzerland", "Algeria"),
     ("Portugal", "Croatia"),
     ("Australia", "Egypt"),
-    ("Colombia", "Scotland"),
+    ("Colombia", "Ghana"),
 ]
