@@ -324,3 +324,134 @@ CONFEDERATION = {
     # OFC
     "New Zealand": "OFC",
 }
+# Confirmed R32 actual results
+ROUND32_RESULTS_2026 = [
+    ("Canada",      "South Africa",           1, 0, "regular"),
+    ("Brazil",      "Japan",                  2, 1, "regular"),
+    ("Paraguay",    "Germany",                1, 1, "penalties"),
+    ("Morocco",     "Netherlands",            1, 1, "penalties"),
+    ("Norway",      "Ivory Coast",            2, 1, "regular"),
+    ("France",      "Sweden",                 3, 0, "regular"),
+    ("Mexico",      "Ecuador",                2, 0, "regular"),
+    ("England",     "DR Congo",               2, 1, "regular"),
+    ("Belgium",     "Senegal",                3, 2, "aet"),
+    ("USA",         "Bosnia and Herzegovina", 2, 0, "regular"),
+    ("Spain",       "Austria",                3, 0, "regular"),
+    ("Portugal",    "Croatia",                2, 1, "aet"),
+    ("Switzerland", "Algeria",                2, 0, "regular"),
+    ("Egypt",       "Australia",              1, 1, "penalties"),
+    ("Argentina",   "Cape Verde",             3, 2, "aet"),
+    ("Colombia",    "Ghana",                  1, 0, "regular"),
+]
+
+# Confirmed Round of 16 bracket
+ROUND16_2026 = [
+    ("Canada",      "Morocco"),
+    ("France",      "Paraguay"),
+    ("Brazil",      "Norway"),
+    ("Mexico",      "England"),
+    ("Portugal",    "Spain"),
+    ("USA",         "Belgium"),
+    ("Argentina",   "Egypt"),
+    ("Switzerland", "Colombia"),
+]
+
+# In-tournament goals scored (boosts recent form signal)
+TOURNAMENT_GOALS_2026 = {
+    "France":       10,
+    "Spain":         8,
+    "Argentina":    11,
+    "Brazil":        9,
+    "England":       9,
+    "Norway":       10,
+    "Colombia":      5,
+    "Morocco":       2,
+    "Canada":        8,
+    "Mexico":        7,
+    "USA":           5,
+    "Portugal":      9,
+    "Switzerland":   7,
+    "Belgium":       9,
+    "Egypt":         3,
+    "Paraguay":      2,
+}
+
+# Penalty shootout historical record (won, played)
+PENALTY_RECORD = {
+    "Argentina":    (5, 7),
+    "Spain":        (4, 5),
+    "France":       (3, 4),
+    "Portugal":     (4, 6),
+    "Brazil":       (3, 6),
+    "England":      (2, 8),
+    "Germany":      (4, 6),
+    "Netherlands":  (2, 5),
+    "Morocco":      (2, 3),
+    "Egypt":        (3, 4),
+    "USA":          (1, 3),
+    "Mexico":       (1, 5),
+    "Colombia":     (2, 3),
+    "Belgium":      (2, 3),
+    "Norway":       (1, 2),
+    "Switzerland":  (1, 3),
+    "Canada":       (0, 1),
+    "Paraguay":     (2, 3),
+}
+# Extra time fatigue — teams that played 120 mins in R32
+# Reduces effective strength by ~3% in R16
+EXTRA_TIME_R32 = {
+    "Belgium",      # 3-2 Senegal AET
+    "Portugal",     # 2-1 Croatia AET
+    "Argentina",    # 3-2 Cape Verde AET
+    "Egypt",        # 1-1 Australia (pens)
+    "Paraguay",     # 1-1 Germany (pens)
+    "Morocco",      # 1-1 Netherlands (pens)
+}
+
+# Key player suspensions / injuries for R16
+# Format: {team: [suspended/injured players, reason]}
+PLAYER_FLAGS_R16 = {
+    "USA": {
+        "suspended": ["Folarin Balogun"],
+        "reason": "Red card vs Bosnia — wrongly given but cannot appeal"
+    },
+    "Argentina": {
+        "fitness_concern": ["Lionel Messi"],
+        "reason": "Played 120 mins vs Cape Verde, age 39, fatigue risk"
+    },
+    "Portugal": {
+        "fitness_concern": ["Cristiano Ronaldo"],
+        "reason": "Played 120 mins vs Croatia, age 41, fatigue risk"
+    },
+    "Belgium": {
+        "fitness_concern": ["Romelu Lukaku"],
+        "reason": "Played 120 mins vs Senegal, scored in 86th min"
+    },
+    "Morocco": {
+        "fitness_concern": ["Achraf Hakimi"],
+        "reason": "Played 120 mins + penalties vs Netherlands"
+    },
+}
+
+# Strength adjustment factors for R16
+# Based on current tournament performance vs pre-tournament Elo
+# Positive = performing above Elo expectation
+# Negative = underperforming
+FORM_ADJUSTMENT_R16 = {
+    "France":       +0.08,   # Mbappé brace, Dembélé hat-trick, 10 goals — dominant
+    "Morocco":      +0.06,   # Beat Netherlands on pens — massively outperforming
+    "Norway":       +0.05,   # Haaland 4 goals, beating expectations
+    "Paraguay":     +0.05,   # Beat Germany on pens — giant killer
+    "Egypt":        +0.04,   # Penalty win vs Australia — organised
+    "Canada":       +0.03,   # Historic wins, home crowd
+    "Mexico":       +0.03,   # Home crowd boost in Mexico City
+    "Colombia":     +0.02,   # Solid but not spectacular
+    "Spain":        +0.01,   # Won but not convincing until Austria
+    "Argentina":   -0.02,    # Struggled vs Cape Verde, Messi fatigue
+    "USA":         -0.03,    # Balogun suspended, unconvincing vs Bosnia
+    "England":     -0.02,    # Unconvincing, relying on individual moments
+    "Belgium":     -0.02,    # Needed AET to beat Senegal
+    "Portugal":    -0.01,    # Needed AET vs Croatia
+    "Brazil":       0.00,    # Beat Japan but not convincing
+    "Switzerland":  0.00,    # Solid 2-0 vs Algeria, reliable
+}

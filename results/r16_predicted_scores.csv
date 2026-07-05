@@ -1,0 +1,9 @@
+match,predicted_score,favourite,confidence,pen_strength_a,pen_strength_b
+Canada vs Morocco,1-1,Morocco,54%,0%,67%
+France vs Paraguay,2-0,France,85%,75%,67%
+Brazil vs Norway,1-1,Brazil,59%,50%,50%
+Mexico vs England,1-1,England,45%,20%,25%
+Portugal vs Spain,1-1,Spain,58%,67%,80%
+USA vs Belgium,0-2,Belgium,85%,33%,67%
+Argentina vs Egypt,2-0,Argentina,85%,71%,75%
+Switzerland vs Colombia,1-1,Colombia,51%,33%,67%

@@ -1,0 +1,9 @@
+match,predicted_score,favourite,confidence,p_win,p_draw,p_loss,pen_a,pen_b,flags
+Canada vs Morocco,1-1,Morocco,54%,41%,5%,54%,0%,67%,Morocco fatigue
+France vs Paraguay,2-0,France,85%,85%,5%,10%,75%,67%,Paraguay fatigue
+Brazil vs Norway,1-1,Brazil,56%,56%,5%,39%,50%,50%,
+Mexico vs England,1-1,England,43%,36%,20%,43%,20%,25%,
+Portugal vs Spain,1-1,Spain,59%,32%,9%,59%,67%,80%,Portugal fatigue
+USA vs Belgium,0-2,Belgium,85%,10%,5%,85%,33%,67%,"Belgium fatigue, USA missing Folarin Balogun"
+Argentina vs Egypt,2-0,Argentina,85%,85%,5%,10%,71%,75%,"Argentina fatigue, Egypt fatigue"
+Switzerland vs Colombia,1-1,Colombia,53%,39%,8%,53%,33%,67%,
