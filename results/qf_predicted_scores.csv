@@ -1,0 +1,5 @@
+match,predicted_score,favourite,confidence,p_win,p_draw,p_loss,pen_a,pen_b,flags
+France vs Morocco,1-1,France,56%,56%,5%,40%,75%,67%,
+Spain vs Belgium,1-1,Spain,60%,60%,5%,35%,80%,67%,
+Norway vs England,1-1,England,56%,40%,4%,56%,50%,25%,
+Argentina vs Switzerland,2-0,Argentina,79%,79%,11%,10%,71%,50%,"Argentina fatigue, Switzerland fatigue"

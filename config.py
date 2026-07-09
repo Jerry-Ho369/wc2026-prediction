@@ -454,4 +454,64 @@ FORM_ADJUSTMENT_R16 = {
     "Portugal":    -0.01,    # Needed AET vs Croatia
     "Brazil":       0.00,    # Beat Japan but not convincing
     "Switzerland":  0.00,    # Solid 2-0 vs Algeria, reliable
+}# Confirmed R16 actual results
+ROUND16_RESULTS_2026 = [
+    ("Morocco",     "Canada",     3, 0, "regular"),
+    ("France",      "Paraguay",   1, 0, "regular"),
+    ("Norway",      "Brazil",     2, 1, "regular"),
+    ("England",     "Mexico",     3, 2, "regular"),
+    ("Spain",       "Portugal",   1, 0, "regular"),
+    ("Belgium",     "USA",        4, 1, "regular"),
+    ("Argentina",   "Egypt",      3, 2, "regular"),
+    ("Switzerland", "Colombia",   0, 0, "penalties"),  # SUI win 4-3
+]
+
+# Confirmed Quarterfinals bracket
+QF_2026 = [
+    ("France",    "Morocco"),
+    ("Spain",     "Belgium"),
+    ("Norway",    "England"),
+    ("Argentina", "Switzerland"),
+]
+
+# Updated tournament goals including R16
+TOURNAMENT_GOALS_R16_2026 = {
+    "France":       11,   # +1 vs Paraguay (Mbappé pen)
+    "Morocco":      10,   # +3 vs Canada — Ounahi brace
+    "Norway":       12,   # +2 vs Brazil — Haaland dominant
+    "England":      12,   # +3 vs Mexico — Kane brace
+    "Spain":        9,    # +1 vs Portugal — late winner
+    "Belgium":      13,   # +4 vs USA — De Ketelaere brace
+    "Argentina":    14,   # +3 vs Egypt — Messi + Di Maria
+    "Switzerland":  7,    # 0 vs Colombia — defensive
+}
+
+# Extra time fatigue for QF
+EXTRA_TIME_QF = {
+    "Switzerland",   # 0-0 vs Colombia, 120 mins + pens
+    "Argentina",     # 3-2 vs Egypt, came from behind twice
+}
+
+# QF form adjustments
+FORM_ADJUSTMENT_QF = {
+    "Morocco":      +0.10,  # 3-0 vs Canada — best performance of tournament
+    "Norway":       +0.10,  # Beat Brazil — Haaland unstoppable
+    "France":       +0.06,  # Grinding wins — efficient
+    "Belgium":      +0.05,  # 4-1 vs USA — De Bruyne back
+    "England":      +0.04,  # 3-2 comeback vs Mexico — Kane brace
+    "Spain":        +0.03,  # Won but unconvincing vs Portugal
+    "Argentina":   -0.03,   # Struggled vs Egypt — Messi fatigue
+    "Switzerland": -0.02,   # 0-0 vs Colombia — poor attack
+}
+
+# Penalty record updated with tournament data
+PENALTY_RECORD_QF = {
+    "France":       (3, 4),
+    "Morocco":      (2, 3),
+    "Spain":        (4, 5),
+    "Belgium":      (2, 3),
+    "Norway":       (1, 2),
+    "England":      (2, 8),   # still historically poor
+    "Argentina":    (5, 7),
+    "Switzerland":  (2, 4),   # just won vs Colombia
 }
