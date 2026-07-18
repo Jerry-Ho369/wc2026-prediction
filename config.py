@@ -464,9 +464,7 @@ ROUND16_RESULTS_2026 = [
     ("Belgium",     "USA",        4, 1, "regular"),
     ("Argentina",   "Egypt",      3, 2, "regular"),
     ("Switzerland", "Colombia",   0, 0, "penalties"),  # SUI win 4-3
-]
-
-# Confirmed Quarterfinals bracket
+]# Confirmed Quarterfinals bracket
 QF_2026 = [
     ("France",    "Morocco"),
     ("Spain",     "Belgium"),
@@ -514,4 +512,64 @@ PENALTY_RECORD_QF = {
     "England":      (2, 8),   # still historically poor
     "Argentina":    (5, 7),
     "Switzerland":  (2, 4),   # just won vs Colombia
+}
+
+# Confirmed QF actual results
+QF_RESULTS_2026 = [
+    ("France",    "Morocco",     2, 0, "regular"),
+    ("Spain",     "Belgium",     2, 1, "regular"),
+    ("England",   "Norway",      2, 1, "aet"),
+    ("Argentina", "Switzerland", 3, 1, "aet"),
+]
+
+SF_2026 = [
+    ("France",    "Spain"),
+    ("Argentina", "England"),
+]
+
+TOURNAMENT_GOALS_QF_2026 = {
+    "France":    13,
+    "Spain":     11,
+    "Argentina": 17,
+    "England":   14,
+}
+
+EXTRA_TIME_SF = {"England", "Argentina"}
+
+FORM_ADJUSTMENT_SF = {
+    "France":    0.08,
+    "Argentina": 0.05,
+    "England":   0.04,
+    "Spain":     0.03,
+}
+
+PLAYER_FLAGS_SF = {
+    "France":    {"in_form": ["Kylian Mbappe"], "note": "8 goals - Golden Boot leader"},
+    "Argentina": {"fitness_concern": ["Lionel Messi"], "note": "Fatigue - streak ended vs Switzerland"},
+    "England":   {"in_form": ["Jude Bellingham"], "note": "6 goals - scored every knockout match"},
+    "Spain":     {"in_form": ["Lamine Yamal"], "note": "18 years old - best player in tournament"},
+}
+
+SF_RESULTS_2026 = [
+    ("Spain",     "France",   2, 0, "regular"),
+    ("Argentina", "England",  2, 1, "regular"),
+]
+THIRD_PLACE_2026 = ("France", "England")
+FINAL_2026 = ("Spain", "Argentina")
+TOURNAMENT_GOALS_SF_2026 = {"Spain":13,"Argentina":19,"France":13,"England":15}
+LATE_GOALS_2026 = {"Argentina":9,"Spain":4,"France":3,"England":3}
+SHOTS_ON_TARGET_2026 = {"Argentina":5.2,"Spain":6.1,"France":7.3,"England":4.8}
+GOALS_CONCEDED_2026 = {"Spain":3,"Argentina":7,"France":4,"England":6}
+SET_PIECE_GOALS_2026 = {"Argentina":6,"Spain":3,"France":2,"England":4}
+STAR_PLAYER_FORM = {
+    "Argentina": {"player":"Messi","goals":8,"assists":7,"note":"8G 7A"},
+    "Spain":     {"player":"Yamal","goals":4,"assists":6,"note":"19yo Ballon dOr frontrunner"},
+    "France":    {"player":"Mbappe","goals":8,"assists":3,"note":"8G Golden Boot tied"},
+    "England":   {"player":"Bellingham","goals":6,"assists":2,"note":"6G best tournament ever"},
+}
+FORM_ADJUSTMENT_FINAL = {
+    "Spain":+0.10,"Argentina":+0.06,"France":-0.05,"England":-0.03
+}
+PENALTY_RECORD_FINAL = {
+    "Spain":(4,5),"Argentina":(5,7),"France":(2,3),"England":(2,8)
 }
